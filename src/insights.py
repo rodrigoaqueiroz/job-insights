@@ -59,9 +59,8 @@ def get_max_salary(path):
     max_salary = []
     for salary in file:
         if salary['max_salary'].isdigit():
-            max_salary.append(salary["max_salary"])
-    max_salary.sort()
-    return max_salary[-1]
+            max_salary.append(float(salary["max_salary"]))
+    return max(max_salary)
 
 
 def get_min_salary(path):
