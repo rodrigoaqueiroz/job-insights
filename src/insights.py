@@ -80,5 +80,3 @@ def filter_by_salary_range(jobs, salary):
         except ValueError:
             print('not valid value')
     return valid_salaries
-
-
