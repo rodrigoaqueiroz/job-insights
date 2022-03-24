@@ -49,3 +49,9 @@ def test_sort_by_criteria():
     for test in criteria:
         sort_by(jobs, test)
         assert jobs == function_mappings[test]
+
+# other way to do.
+# def test_sort_by_criteria():
+#     for test in criteria:
+#         sort_by(jobs, test)
+#         assert jobs == eval(f'mock_{test}')
